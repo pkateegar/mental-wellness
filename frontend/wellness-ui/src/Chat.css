@@ -29,7 +29,7 @@
 /* User (Right-aligned, Blue Background) */
 .user {
     align-self: flex-end;
-    background-color: #007bff;
+    background-color: #f1f1f1;
     color: white;
     border-top-right-radius: 0;
     text-align: right;

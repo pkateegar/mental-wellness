@@ -17,7 +17,7 @@ const Chat = () => {
         setLoading(true);
 
         try {
-            const response = await axios.post("http://127.0.0.1:5000/chat", { message: input });
+            const response = await axios.post("http://127.0.0.1:8000/chat", { message: input });
             const { response: botResponse, sentiment } = response.data;
 
             const botMessage = { text: botResponse, sender: "bot", sentiment };

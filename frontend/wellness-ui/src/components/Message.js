@@ -15,7 +15,7 @@ const Message = ({ text, sender, sentiment }) => {
     };
 
     return (
-        <div className={'message ${sender}'}>
+        <div className={`message ${sender}`}>
             <p style={{ color: getSentimentColor(sentiment) }}>{text}</p>
         </div>
     );
