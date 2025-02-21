@@ -18,9 +18,9 @@ const Chat = () => {
 
         try {
             const response = await axios.post("http://127.0.0.1:8000/chat", { message: input });
-            const { response: botResponse, sentiment } = response.data;
-
-            const botMessage = { text: botResponse, sender: "bot", sentiment };
+            const { response: botResponse, emotions } = response.data;
+            
+            const botMessage = { text: botResponse, sender: "bot", emotions };
             setMessages([...messages, newMessage, botMessage]);
         } catch (error) {
             console.error("Error sending message:", error);
@@ -35,7 +35,7 @@ const Chat = () => {
         <div className="chat-container">
             <div className="chat-box">
                 {messages.map((msg, index) => (
-                    <Message key={index} text={msg.text} sender={msg.sender} sentiment={msg.sentiment} />
+                    <Message key={index} text={msg.text} sender={msg.sender} sentiment={msg} />
                 ))}
                 {loading && <p className="loading">Processing your request...</p>}
             </div>
