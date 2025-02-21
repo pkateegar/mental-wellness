@@ -5,7 +5,7 @@ import "./App.css"; // Import global styles
 const App = () => {
     return (
         <div className="app">
-            <h1>AI-Powered Mental Wellness Compion By <br/>AI-Bots</h1>
+            <h1>AI-Powered Mental Wellness Companion By <br/>AI-Bots</h1>
             <Chat />
         </div>
     );
