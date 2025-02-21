@@ -1,6 +1,11 @@
+.app {
+    text-align: center;
+}
+
 .chat-container {
-    width: 400px;
+    width: 80%;
     height: 500px;
+    margin:0 10%;
     border: 1px solid #ccc;
     border-radius: 10px;
     display: flex;
@@ -74,4 +79,9 @@ button {
     color: white;
     cursor: pointer;
     border-radius: 5px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
 }

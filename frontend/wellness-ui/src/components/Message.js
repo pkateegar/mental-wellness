@@ -1,6 +1,8 @@
 import React from "react";
 
 const Message = ({ text, sender, sentiment }) => {
+    var emotions = sentiment;
+    console.log(emotions);
     const getSentimentColor = (sentiment) => {
         switch (sentiment) {
             case "positive":
